@@ -1,24 +1,38 @@
 <!DOCTYPE html>
 <html lang="it">
-  <head>
-    <title>Corso Edgmenoy</title>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="style/style.css" />
-  </head>
-  <body>
-    <div class="toast toast__is-hidden"></div>
-    <main>
-      <section>
-        <h2>Film popolari</h2>
-        <div id="popularMovies" class="carousel"></div>
-      </section>
-    </main>
-    <script src="src/index.js"></script>
-  </body>
+	<head>
+		<title>Corso Edgmenoy</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" />
+		<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet" />
+		<link rel="stylesheet" href="style/style.css" />
+		<link rel="stylesheet" href="style/flipcard.css" />
+	</head>
+	<body>
+		<div class="toast toast__is-hidden"></div>
+		<main>
+			<section class="carousel__wrapper">
+				<h3 class="section-title">Film popolari</h3>
+				<div id="popular" class="carousel__wrapper-card-wrapper"></div>
+				<div class="carousel__wrapper--pagination"></div>
+			</section>
+			<section class="carousel__wrapper">
+				<h3 class="section-title">Film più votati</h3>
+				<div id="top_rated" class="carousel__wrapper-card-wrapper"></div>
+				<div class="carousel__wrapper--pagination"></div>
+			</section>
+			<section class="carousel__wrapper">
+				<h3 class="section-title">Film in Sala</h3>
+				<div id="now_playing" class="carousel__wrapper-card-wrapper"></div>
+				<div class="carousel__wrapper--pagination"></div>
+			</section>
+			<section class="carousel__wrapper">
+				<h3 class="section-title">Film in arrivo</h3>
+				<div id="upcoming" class="carousel__wrapper-card-wrapper"></div>
+				<div class="carousel__wrapper--pagination"></div>
+			</section>
+		</main>
+		<script src="src/index.js"></script>
+	</body>
 </html>
